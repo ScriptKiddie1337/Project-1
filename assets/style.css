@@ -1,8 +1,30 @@
+.navbar {
+    height: 100px;
+    color: green;
+}
 
+#container {
+    margin: 0 auto;
+    background-color: rgb(202, 202, 202);
+}
 
+#top-10-bar {
+    background-color: blue;
+    margin: 0 auto;
+    padding: 10px;
+}
 
+#info-bar {
+    background-color: red;
+    margin: 0 auto;
+    padding: 10px;
+}
 
-
+#map {
+    background-color: green;
+    margin: 0 auto;
+    padding: 10px;
+}
 
 
 
