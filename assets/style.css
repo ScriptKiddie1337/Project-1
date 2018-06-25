@@ -4,26 +4,28 @@
 }
 
 #container {
-    margin: 0 auto;
+    margin: 0;
     background-color: rgb(202, 202, 202);
 }
 
 #top-10-bar {
     background-color: blue;
-    margin: 0 auto;
     padding: 10px;
+    height: 1000px;
 }
 
 #info-bar {
     background-color: red;
-    margin: 0 auto;
     padding: 10px;
 }
 
 #map {
     background-color: green;
-    margin: 0 auto;
     padding: 10px;
+}
+
+#search-results {
+    backgroundcolor: white;
 }
 
 
