@@ -10,25 +10,43 @@
 #top-10-bar {
     background-color: blue;
     padding: 10px;
-    height: 500px;
+    height: 100%;
+    
 }
 
 #info-bar {
     background-color: red;
     padding: 10px;
+    height: 25%;
+    
 }
 
 #map {
     background-color: green;
     padding: 10px;
+    height: 75%;
 }
 
 #search-results {
-    backgroundcolor: white;
+    background-color: white;
 }
 
+#column1 {
+    padding: 0;
+    min-height: 1000px;
+   
+}
 
+#column2 {
+    padding: 0;
+    min-height: 1000px;
+   
+}
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
