@@ -23,7 +23,7 @@ o	Simple no authentication
 o	JSON response returned
 o	Well documented
 
-Team: Jordan Silver, Philip Digiglio, Charles Tawle
+Team: Jordan Silver, Philip Digiglio, Charles Tawle, Brian Laney
 
 Scope of Project
 

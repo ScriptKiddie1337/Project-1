@@ -4,14 +4,13 @@
 }
 
 #container {
-    margin: 0;
     background-color: rgb(202, 202, 202);
 }
 
 #top-10-bar {
     background-color: blue;
     padding: 10px;
-    height: 1000px;
+    height: 500px;
 }
 
 #info-bar {
