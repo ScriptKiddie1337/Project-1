@@ -12,6 +12,10 @@
     background-color: rgb(113, 202, 183);
 }
 
+.page-container {
+    padding: 30px 10px;
+}
+
 #top-10-bar {
     padding: 10px;
     height: 100%;
@@ -27,6 +31,7 @@
 #map {
     padding: 10px;
     height: 75%;
+    
 }
 
 #gif-array {
@@ -36,22 +41,24 @@
 #map-display {
     background-color: white;
     height: 100%;
+    background: url("https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg");
 }
 
 #yelp-display {
     background-color: white;
     height: 100%;
+    background: url("https://s3.amazonaws.com/mentoring.redesign/s3fs-public/no-business-on-yelp.jpg");
 }
 
 #column1 {
     padding: 0;
-    min-height: 1000px;
+    min-height: 600px;
    
 }
 
 #column2 {
     padding: 0;
-    min-height: 1000px;
+    min-height: 600px;
    
 }
 
