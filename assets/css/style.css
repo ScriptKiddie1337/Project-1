@@ -1,35 +1,75 @@
 .navbar {
     height: 100px;
-    color: green;
+    color: rgb(113, 202, 183);
+}
+
+#gif-logo {
+    max-height: 100px;
+    max-width: 100px;
 }
 
 #container {
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(113, 202, 183);
+}
+
+.page-container {
+    padding: 30px 10px;
 }
 
 #top-10-bar {
-    background-color: blue;
     padding: 10px;
-    height: 500px;
+    height: 100%;
+    
 }
 
 #info-bar {
-    background-color: red;
     padding: 10px;
+    height: 25%;
+    
 }
 
 #map {
-    background-color: green;
     padding: 10px;
+    height: 75%;
+    
 }
 
-#search-results {
-    backgroundcolor: white;
+#gif-array {
+    background-color: white;
 }
 
+#map-display {
+    background-color: white;
+    height: 100%;
+    background: url("https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg");
+}
 
+#yelp-display {
+    background-color: white;
+    height: 100%;
+    background: url("https://s3.amazonaws.com/mentoring.redesign/s3fs-public/no-business-on-yelp.jpg");
+}
 
+#column1 {
+    padding: 0;
+    min-height: 600px;
+   
+}
 
+#column2 {
+    padding: 0;
+    min-height: 600px;
+   
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer {
+    background-color: rgb(221, 173, 82);
+}
 
 
 
