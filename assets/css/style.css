@@ -1,5 +1,5 @@
 .navbar {
-    height: 100px;
+    max-height: 200px;
     color: rgb(113, 202, 183);
 }
 
@@ -13,7 +13,12 @@
 }
 
 .page-container {
-    padding: 30px 10px;
+    padding: 20px 10px;
+}
+
+#search-container {
+    background-color: rgb(221, 173, 82);
+    padding: 10px;
 }
 
 #top-10-bar {
@@ -36,6 +41,7 @@
 
 #gif-array {
     background-color: white;
+    padding: 10px;
 }
 
 #map-display {
@@ -48,6 +54,7 @@
     background-color: white;
     height: 100%;
     background: url("https://s3.amazonaws.com/mentoring.redesign/s3fs-public/no-business-on-yelp.jpg");
+    padding: 10px;
 }
 
 #column1 {
