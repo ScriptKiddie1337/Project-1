@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var lat = "";
     var long = "";
-    var location =""
+    var userLocation =""
     var searchRadius ="1500"
     var searchType = "restaurant"
 
@@ -33,17 +33,24 @@ $(document).ready(function () {
     function getLocationSuccess(position) {
         lat = position.coords.latitude;
         long = position.coords.longitude;
-        location = lat + "," + long;
+        userLocation = lat + "," + long;
 
-        console.log(location);
+        console.log(userLocation);
 
         /*   do_something(position.coords.latitude, position.coords.longitude); */
 
-      /*   var url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat.toString()},${long.toString()}&key=${key}`; */
-        var url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=32.766710,-117.226453&key=AIzaSyAanF7HzrZs0nv_lhvjDcr2vvjtmbyJYAQ`;
+        var url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${userLocation}&radius=${searchRadius}&key=${key}&libraries="places"`;
 
-       /*  document.getElementById("#map"). */
-        getAjaxLocation(url)  
+        insertBaseMap()
+    }
+
+    function insertBaseMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(lat, long),      
+            zoom: 18,
+            mapTypeId: google.maps.MapTypeId.street
+        }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     }
 
     function getLocationError(err) {
@@ -51,10 +58,10 @@ $(document).ready(function () {
 
          var url= `https://maps.googleapis.com/maps/api/place/textsearch/json?location=32.766710,-117.226453&radius=${searchRadius}&type=${searchType}&rankby=distance&keyword=pizza&${key}&formatted_address`;
 
-         getAjaxLocation(url)
+      /*    getAjaxLocation(url) */
     }
 
-    function getAjaxLocation(url){
+   /*  function getAjaxLocation(url){
 
         $.ajax({
             url: url,
@@ -63,7 +70,7 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response.results);
         });
-    }
+    } */
 
     var map;
     var service;
@@ -73,7 +80,7 @@ $(document).ready(function () {
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: mapCenter,
-            zoom: 1
+            zoom: 18
         });
 
         var request = {
