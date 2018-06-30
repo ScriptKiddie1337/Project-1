@@ -8,6 +8,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -31,69 +32,172 @@
 
 						<div id="navColumn2" class="col-sm">
 							<div>
-								<a class="navbar-brand">GifMappy Search Query</a>
+								<a class="navbar-brand"><h4>GifMappy Search Query</h4></a>
 								<br>
-								<small>Maps for Millennials</small>
+								<h5>Maps for Millennials</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!--Search Container-->
-				<div class="row">
-					<div class="">
-						<form class="form-inline">
-							<input class="form-control mr-sm-2" type="search" id="Search" placeholder="GifMappy Search" aria-label="Search">
-							<button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
-						</form>
-					</div>
-				</div>
+				
+					<div id="search-container" class="col-md-6 rounded mx-auto">
+								<form class="col text-center">
+									<input class="form-control mr-sm-2" type="search" placeholder="GifMappy Search" aria-label="Search">
+									<button class="btn btn-info my-sm-2 col-sm-4" type="submit">Begin Search</button>
+								</form>		
+					</div>	
+
 			</nav>
 		</div>
 
+		<!--Carousel-->
 
-		<!--Original page data for center content-->
-
-		<div class="row justify-content-center">
-			<div id="column1" class="col-md-4">
-				<div id="top-10-bar" class="d-inline-flex p-2 w-100">
-					<div id="gif-array" class="w-100 shadow-lg rounded">
-						<h1>Phase 1: Gif array list.</h1>
-						<h2>div id for javascript: #gif-array</h2>
-						<hr>
-						<h3>Business Name</h3>
-						<h4>Business Description</h4>
-						<h4>Google Reviews</h4>
-						<h5>Address:</h5>
-						<h5>Hours Open:</h5>
-						<h5>Phone:</h5>
-						<h5>Pictures</h5>
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active page-container">
+							<div class="row justify-content-center">
+									<div id="column1" class="col-md-4">
+										<div id="top-10-bar" class="d-inline-flex p-2 w-100">
+											<div id="gif-array" class="w-100 shadow-lg rounded">
+												<h1>Carousel Page 1</h1>
+												<h1>Phase 1: Gif array list.</h1>
+												<h2>div id for javascript: #gif-array</h2>
+												<hr>
+												<span class="biz-gif"><iframe src="https://giphy.com/embed/TeeJEaWQtb9mg" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></span>
+												<h3><u><span class="biz-name">Business Name</span></u></h3>
+												<h4><span class="biz-description"><i class="fas fa-address-card"></i> Business Description</span></h4>
+												<hr>
+												<h4><span class="google-reviews"><i class="fas fa-smile"></i> Google Reviews</span></h4>
+												<hr>
+												<h5><span class="biz-address"><i class="fas fa-map-pin"></i> Address:</span></h5>
+												<h5><span class="biz-hours"><i class="fas fa-clock"></i> Hours Open:</span></h5>
+												<h5><span class="biz-phone"><i class="fas fa-phone"></i> Phone:</span></h5>
+											</div>
+										</div>
+									</div>
+						
+									<div id="column2" class="col-md-8">
+						
+										<div id="map" class="align-self-stretch">
+											<div id="map-display" class="w-100 shadow-lg rounded">
+												<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
+												 allowfullscreen></iframe>
+											</div>
+										</div>
+						
+										<div id="info-bar" class="align-self-center">
+											<div id="yelp-display" class="w-100 shadow-lg rounded">
+												<br>
+												<br>
+												<br>
+												<h4>Phase 3: Yelp Infobar | div id for javascript targeting: #yelp-display</h4>
+											</div>
+										</div>
+						
+									</div>
+						
+								</div>
+					</div>
+					<div class="carousel-item page-container">
+							<div class="row justify-content-center">
+									<div id="column1" class="col-md-4">
+										<div id="top-10-bar" class="d-inline-flex p-2 w-100">
+											<div id="gif-array" class="w-100 shadow-lg rounded">
+												<h1>Carousel Page 2</h1>
+												<h1>Phase 1: Gif array list.</h1>
+												<h2>div id for javascript: #gif-array</h2>
+												<hr>
+												<span class="biz-gif"><iframe src="https://giphy.com/embed/TeeJEaWQtb9mg" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></span>
+												<h3><u><span class="biz-name">Business Name</span></u></h3>
+												<h4><span class="biz-description"><i class="fas fa-address-card"></i> Business Description</span></h4>
+												<hr>
+												<h4><span class="google-reviews"><i class="fas fa-smile"></i> Google Reviews</span></h4>
+												<hr>
+												<h5><span class="biz-address"><i class="fas fa-map-pin"></i> Address:</span></h5>
+												<h5><span class="biz-hours"><i class="fas fa-clock"></i> Hours Open:</span></h5>
+												<h5><span class="biz-phone"><i class="fas fa-phone"></i> Phone:</span></h5>
+											</div>
+										</div>
+									</div>
+						
+									<div id="column2" class="col-md-8">
+						
+										<div id="map" class="align-self-stretch">
+											<div id="map-display" class="w-100 shadow-lg rounded">
+												<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
+												 allowfullscreen></iframe>
+											</div>
+										</div>
+						
+										<div id="info-bar" class="align-self-center">
+											<div id="yelp-display" class="w-100 shadow-lg rounded">
+												<br>
+												<br>
+												<br>
+												<h4>Phase 3: Yelp Infobar | div id for javascript targeting: #yelp-display</h4>
+											</div>
+										</div>
+						
+									</div>
+						
+								</div>
+					</div>
+					<div class="carousel-item page-container">
+							<div class="row justify-content-center">
+									<div id="column1" class="col-md-4">
+										<div id="top-10-bar" class="d-inline-flex p-2 w-100">
+											<div id="gif-array" class="w-100 shadow-lg rounded">
+												<h1>Carousel Page 3</h1>
+												<h1>Phase 1: Gif array list.</h1>
+												<h2>div id for javascript: #gif-array</h2>
+												<hr>
+												<span class="biz-gif"><iframe src="https://giphy.com/embed/TeeJEaWQtb9mg" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></span>
+												<h3><u><span class="biz-name">Business Name</span></u></h3>
+												<h4><span class="biz-description"><i class="fas fa-address-card"></i> Business Description</span></h4>
+												<hr>
+												<h4><span class="google-reviews"><i class="fas fa-smile"></i> Google Reviews</span></h4>
+												<hr>
+												<h5><span class="biz-address"><i class="fas fa-map-pin"></i> Address:</span></h5>
+												<h5><span class="biz-hours"><i class="fas fa-clock"></i> Hours Open:</span></h5>
+												<h5><span class="biz-phone"><i class="fas fa-phone"></i> Phone:</span></h5>
+											</div>
+										</div>
+									</div>
+						
+									<div id="column2" class="col-md-8">
+						
+										<div id="map" class="align-self-stretch">
+											<div id="map-display" class="w-100 shadow-lg rounded">
+												<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
+												 allowfullscreen></iframe>
+											</div>
+										</div>
+						
+										<div id="info-bar" class="align-self-center">
+											<div id="yelp-display" class="w-100 shadow-lg rounded">
+												<br>
+												<br>
+												<br>
+												<h4>Phase 3: Yelp Infobar | div id for javascript targeting: #yelp-display</h4>
+											</div>
+										</div>
+						
+									</div>
+						
+								</div>
 					</div>
 				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-
-			<div id="column2" class="col-md-8">
-
-				<div id="map" class="align-self-stretch">
-					<div id="map-display" class="w-100 shadow-lg rounded">
-						<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
-						 allowfullscreen></iframe>
-					</div>
-				</div>
-
-				<div id="info-bar" class="align-self-center">
-					<div id="yelp-display" class="w-100 shadow-lg rounded">
-						<br>
-						<br>
-						<br>
-						<h2>Phase 3: Yelp Infobar | div id for javascript targeting: #yelp-display</h2>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-		<!-- .container -->
-	</div>
+	</div> <!-- .container -->
 	<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4 border-top border-secondary">
 
@@ -151,11 +255,9 @@
 	</footer>
 	<!-- Footer -->
 	<!-- Optional JavaScript -->
-	
-	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
-	 <!-- crossorigin="anonymous"></script> -->
-	 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  -->
-	 <script src="assets/offTheShelf/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="assets/js/main.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="assets/offTheShelf/jquery-3.3.1.min.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
