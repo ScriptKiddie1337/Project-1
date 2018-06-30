@@ -1,4 +1,4 @@
-
+// load the gif matrix
  function loadgifmatrix(queryURL){
 
     $("#gif-array").empty()
@@ -38,18 +38,18 @@ $(document).ready(function () {
     // enter api key 
     let giphyApiKey = "api_key=" + "Cfr5S4u6v2caXyLC4CeF8pn4n6kbGJSk"
     
-
     //preload gif
     let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + "search" + "&" + giphyApiKey + "&limit=10"
     console.log(queryURL)
     loadgifmatrix(queryURL)
    
     //get input
-    $(".btn-info").on("click", function (event) {
+    $("#searchBtn").on("click", function (event) {
         event.preventDefault();
 
         //load search gif
-        searchQuery = $("#Search").val().trim()
+        searchQuery = $(".searchInput").val().trim()
+        console.log(searchQuery)
 
        // switch(searchQuery){
         //   case "pizza":
