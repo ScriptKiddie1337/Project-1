@@ -49,7 +49,8 @@ $(document).ready(function () {
         event.preventDefault();
 
         //load search gif
-        searchQuery = $("#Search").val().trim()
+        searchQuery = $(".form-control").val().trim()
+        console.log(searchQuery)
 
        // switch(searchQuery){
         //   case "pizza":
