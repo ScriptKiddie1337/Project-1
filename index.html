@@ -12,6 +12,7 @@
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
 
+
 	<title>GifMappy</title>
 </head>
 
@@ -34,6 +35,9 @@
 								<a class="navbar-brand">GifMappy Search Query</a>
 								<br>
 								<small>Maps for Millennials</small>
+								<!--Location Test Button-->
+								<button id="testButton" type="button" class="btn btn-primary">Location Test</button>
+								<button id="testLocations" type="button" class="btn btn-primary">Location Test</button>
 							</div>
 						</div>
 					</div>
@@ -75,8 +79,7 @@
 
 				<div id="map" class="align-self-stretch">
 					<div id="map-display" class="w-100 shadow-lg rounded">
-						<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=JRDN%20Restaurant%2C%20723%20Felspar%20St%2C%20San%20Diego%C%20CA%2092109&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
-						 allowfullscreen></iframe>
+						<div id="map" width="300" height="300" style="background-color: #ccc;"></div>
 					</div>
 				</div>
 
@@ -151,14 +154,17 @@
 	</footer>
 	<!-- Footer -->
 	<!-- Optional JavaScript -->
-	<script src="assets/js/main.js"></script>
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
+ 
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/offTheShelf/jquery-3.3.1.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	 crossorigin="anonymous"></script>
+   crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-	 crossorigin="anonymous"></script>
+   crossorigin="anonymous"></script>
+
+<!--    library for client side calls to google places api -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAanF7HzrZs0nv_lhvjDcr2vvjtmbyJYAQ"></script>
+   <script src="assets/js/getLocations.js"></script>
 </body>
 
 </html>
