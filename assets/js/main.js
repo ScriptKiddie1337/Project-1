@@ -26,11 +26,9 @@
             //set the still attribute to yes 
             gifImage.attr("still", "yes")
             gifImage.addClass("startImage")
-            //add ratings and gif to object list
-
+            
             $("#gif-array").prepend(gifImage)
         }
-        // console.log(gifImage)
     })
     }
 $(document).ready(function () {
@@ -40,7 +38,6 @@ $(document).ready(function () {
     
     //preload gif
     let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + "search" + "&" + giphyApiKey + "&limit=10"
-    console.log(queryURL)
     loadgifmatrix(queryURL)
    
     //get input
@@ -49,19 +46,10 @@ $(document).ready(function () {
 
         //load search gif
         searchQuery = $(".searchInput").val().trim()
-        console.log(searchQuery)
-
-       // switch(searchQuery){
-        //   case "pizza":
-
-
-
-        //}
+    
         queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchQuery + "&" + giphyApiKey + "&limit=10"
-        console.log(queryURL)
         loadgifmatrix(queryURL)
 
-        console.log(searchQuery)
     })
-    // display the gif list of ten
+    
 })
