@@ -11,3 +11,8 @@ function generateMapsFromIds(placeIds) {
 
     return result
 }
+
+//Stop carousel auto-slide
+$('.carousel').carousel({
+    interval: false
+}); 
