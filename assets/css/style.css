@@ -53,8 +53,13 @@
 #yelp-display {
     background-color: white;
     height: 100%;
-    background: url("https://s3.amazonaws.com/mentoring.redesign/s3fs-public/no-business-on-yelp.jpg");
     padding: 10px;
+}
+
+#yelpheader {
+    background: url("http://www.darwinaerospace.com/images/yelp_wide.png");
+    height: 100%;
+    max-height: 40px;
 }
 
 #column1 {
@@ -69,6 +74,10 @@
    
 }
 
+.gcolumn {
+    padding: 5px;
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -79,8 +88,29 @@ footer {
 }
 
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+}
 
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rgb(221, 173, 82);
+}
 
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgb(221, 173, 82);
+}
 
 
 
