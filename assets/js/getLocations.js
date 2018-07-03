@@ -40,7 +40,6 @@ $(document).ready(function () {
         /*   do_something(position.coords.latitude, position.coords.longitude); */
 
         var url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${userLocation}&radius=${searchRadius}&key=${key}&libraries="places"`;
-
         insertBaseMap()
     }
 
