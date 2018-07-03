@@ -1,4 +1,4 @@
-function addCarsouselItems(placeIds, details) {
+function addCarsouselItems(placeIds, details, gifs) {
 
     $(".carousel-inner").empty()
 
@@ -20,7 +20,14 @@ function addCarsouselItems(placeIds, details) {
         if (details[index].reviews[0]) {
             userReview1 = `<div class="gcolumn px-1">
             <div class="starcontainer">
-                <span class="googlestars">
+                <span class="googlestars inactive">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="googlestars active" style="width: ${details[index].reviews[0].rating * 20}%">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -40,7 +47,14 @@ function addCarsouselItems(placeIds, details) {
         if (details[index].reviews[1]) {
             userReview2 = `<div class="gcolumn px-1">
             <div class="starcontainer">
-                <span class="googlestars">
+                <span class="googlestars inactive">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="googlestars active" style="width: ${details[index].reviews[1].rating * 20}%">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -65,7 +79,7 @@ function addCarsouselItems(placeIds, details) {
 							<div id="top-10-bar" class="d-inline-flex p-2 w-100">
 								<div id="gif-array" class="w-100 shadow-lg rounded">
 									<span class="biz-gif">
-										<iframe src="https://giphy.com/embed/TeeJEaWQtb9mg" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+										<iframe src="${gifs[index]}" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 									</span>
 									<h3>
 										<u>

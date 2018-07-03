@@ -2,7 +2,7 @@
 
 let key = "key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
 
-function searchNearby(location, term) {
+function searchNearby(location, term, gifs) {
 
     console.log(location)
     $.ajax({
@@ -34,7 +34,7 @@ function searchNearby(location, term) {
                 detailedResults.push(response.result)
                 // add Carousel after last response
                 if (index == (placesIds.length - 1)) {
-                    addCarsouselItems(placesIds, detailedResults)
+                    addCarsouselItems(placesIds, detailedResults, gifs)
                 }
             })
         })
