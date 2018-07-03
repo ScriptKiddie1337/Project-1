@@ -20,7 +20,24 @@ function searchNearby(location, term) {
             }
         })
 
-        addCarsouselItems(placesIds)
+        let detailedResults = []
+
+        placesIds.forEach(function (placedId, index) {
+
+            $.ajax({
+                url: `https://maps.googleapis.com/maps/api/place/details/json?placeid=${placedId}&${key}`,
+                request: "GET",
+                dataType: "json",
+                // Use synchronous requests so get results in order
+                async: false
+            }).then(function (response) {
+                detailedResults.push(response.result)
+                // add Carousel after last response
+                if (index == (placesIds.length - 1)) {
+                    addCarsouselItems(placesIds, detailedResults)
+                }
+            })
+        })
     })
 
 
