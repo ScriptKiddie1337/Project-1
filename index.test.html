@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+
+    <title>GifMappy</title>
+    
+    <style>
+    .container {
+        height: 800px;
+        background-color: teal;
+    }
+
+    .row {
+        height: 100%;
+    }
+
+    .column1 {
+        height: 100%;
+        background-color: red;
+        width: 25%;
+    }
+
+    .column2 {
+        height: 100%;
+        width: 75%;
+        background-color: white;
+    }
+
+    .map {
+        height: 60%;
+    }
+    </style>
+</head>
+
+<body>
+	<header>
+		<div class="row">
+			<!-- Nav Bar-->
+			<nav class="navbar navbar-light bg-light w-100">
+				<div id="logo-container">
+					<div class="row">
+						<!--Logo Container-->
+						<div id="navColumn1" class="col-sm">
+							<div>
+								<img id="gif-logo" class="rounded" src="https://media.giphy.com/media/JUh0yTz4h931K/giphy.gif">
+							</div>
+						</div>
+
+						<div id="navColumn2" class="col-sm">
+							<div>
+								<a class="navbar-brand">
+									<h4>GifMappy Search Query</h4>
+								</a>
+								<br>
+								<h5>Maps for Millennials</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Search Container-->
+
+				<div id="search-container" class="col-md-6 rounded mx-auto">
+					<form class="col text-center">
+						<input class="searchInput form-control mr-sm-2" type="search" placeholder="GifMappy Search" aria-label="Search">
+						<button id="searchBtn" class="btn btn-info my-sm-2 col-sm-4" type="submit">Begin Search</button>
+					</form>
+				</div>
+
+			</nav>
+		</div>
+	</header>
+
+
+<div class="container">
+    <div class="row">
+        <!--List of review items column-->
+        <div class="col-xs-4 column1">
+
+        </div>
+        <!--Map and Yelp Review Column-->
+        <div class="col-xs-8 column2">
+            <div class="map">
+                            <div id="map-display" class="w-100 shadow-lg rounded">
+                                <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
+                                 allowfullscreen></iframe>
+                            </div>
+                        
+            </div>
+            <div class="yelpreviews">
+                	<div id="yelp-display" class="w-100 shadow-lg rounded">
+                            <div class="row">
+                                    <img src="assets/images/yelpbg.png" alt="powered by yelp" class="responsiveimage">
+                                
+                            </div>
+
+                                <div class="row">
+                                        <div class ="col-xs-3">
+                                            <div class="starcontainer">
+                                                <span class="yelpstars">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                </span>
+                                            </div>	
+                                            <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                            <p><span class="yelpReviewDescription">Review Description</span></p>
+                                        </div>
+                                        <div class ="col-xs-3">
+                                            <div class="starcontainer">
+                                                <span class="yelpstars">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                </span>
+                                            </div>	
+                                            <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                            <p><span class="yelpReviewDescription">Review Description</span></p>
+                                        </div>
+                                        <div class ="col-xs-3">
+                                                <div class="starcontainer">
+                                                    <span class="yelpstars">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>	
+                                                <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                                <p><span class="yelpReviewDescription">Review Description</span></p>
+                                        </div>
+                                        <div class ="col-xs-3">
+                                            <div class="starcontainer">
+                                                <span class="yelpstars">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                </span>
+                                            </div>	
+                                            <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                            <p><span class="yelpReviewDescription">Review Description</span></p>
+                                        </div>	
+                                    </div>
+                        </div>
+            </div>
+
+        </div>
+    </div>
+
+</div><!--Container End-->
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="page-footer font-small blue pt-4 border-top border-secondary">
+
+		<!-- Footer Links -->
+		<div class="container-fluid text-center text-md-left">
+
+			<!-- Grid row -->
+			<div class="row">
+
+				<!-- Grid column -->
+				<div class="col-md-4 mt-md-0 mt-3 text-right">
+					<!-- Content -->
+					<h5 class="text-uppercase">It's About The Journey, Not The Destination</h5>
+					<p>Search for anything on planet earth using the coolest and most entertaining maps system in existence.</p>
+
+				</div>
+				<!-- Grid column -->
+				<div class="col-md-4 mb-md-0 mb-3">
+
+					<!-- Links -->
+					<h5 class="text-uppercase">Links</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://developers.google.com/maps/documentation/">Google Maps API Documentation</a>
+						</li>
+						<li>
+							<a href="https://developers.giphy.com/docs/">Giphy API Documentation</a>
+						</li>
+					</ul>
+
+				</div>
+				<hr class="clearfix w-100 d-md-none pb-3">
+
+				<!-- Grid column -->
+				<div class="col-md-4 mb-md-0 mb-3">
+
+					<!-- Links -->
+					<h5 class="text-uppercase">Party Mode</h5>
+					<button type="button" class="btn btn-danger">Engage (broken)</button>
+
+				</div>
+
+			</div>
+			<!-- Grid row -->
+
+		</div>
+		<!-- Footer Links -->
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2018 Copyright
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+	<!-- Optional JavaScript -->
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="assets/offTheShelf/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+
+	<script src="assets/js/getLocation.js"></script>
+	<script src="assets/js/map.js"></script>
+	<script src="assets/js/nearbySearch.js"></script>
+	<script src="assets/js/carouselController.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
