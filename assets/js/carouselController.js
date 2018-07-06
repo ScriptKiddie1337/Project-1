@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-function addCarsouselItems(placeIds) {
-=======
 function addCarsouselItems(placeIds, details, gifs) {
->>>>>>> master
 
     $(".carousel-inner").empty()
 
@@ -14,8 +10,6 @@ function addCarsouselItems(placeIds, details, gifs) {
 
         if (index == 0) {
             active = "active"
-<<<<<<< HEAD
-=======
         } else {
             page = "page " + (index + 1)
         }
@@ -75,31 +69,10 @@ function addCarsouselItems(placeIds, details, gifs) {
                 <span class="googleReviewDescription">${details[index].reviews[1].text}</span>
             </p>
         </div>`
->>>>>>> master
         }
 
         $(".carousel-inner").append(`
             <div class="carousel-item ${active} page-container">
-<<<<<<< HEAD
-                <div class="row justify-content-center">
-                    <div id="column1" class="col-md-4">
-                        <div id="top-10-bar" class="d-inline-flex p-2 w-100">
-                            <div id="gif-array" class="w-100 shadow-lg rounded">
-                                <h1>Carousel Page ${index + 1}</h1>
-                                <h1>Phase 1: Gif array list.</h1>
-                                <h2>div id for javascript: #gif-array</h2>
-                                <hr>
-                                <h3>Business Name</h3>
-                                <h4>Business Description</h4>
-                                <h4>Google Reviewss</h4>
-                                <h5>Address:</h5>
-                                <h5>Hours Open:</h5>
-                                <h5>Phone:</h5>
-                                <h5>Pictures</h5>
-                            </div>
-                        </div>
-                    </div>
-=======
 					<div class="row justify-content-center">
 						<div id="column1" class="col-md-4">
 							<div id="top-10-bar" class="d-inline-flex p-2 w-100">
@@ -136,7 +109,6 @@ function addCarsouselItems(placeIds, details, gifs) {
 								</div>
 							</div>
 						</div>
->>>>>>> master
 
                     <div id="column2" class="col-md-8">
 

@@ -17,38 +17,35 @@
 
 	<title>GifMappy</title>
 </head>
-
 <body>
-	<div id="container">
+	<div id="bgBackground" class="container-fluid">
 		<div class="row">
 			<!-- Nav Bar-->
 			<nav class="navbar navbar-light bg-light w-100">
-				<div id="logo-container">
-					<div class="row">
+					<!-- <div class="row"> -->
 						<!--Logo Container-->
-						<div id="navColumn1" class="col-sm">
+						<div class="col-sm-1 m-1">
 							<div>
 								<img id="gif-logo" class="rounded" src="https://media.giphy.com/media/JUh0yTz4h931K/giphy.gif">
 							</div>
 						</div>
 
-						<div id="navColumn2" class="col-sm">
+						<div class="col-sm-1 m-1">
 							<div>
 								<a class="navbar-brand">
 									<h4>GifMappy Search Query</h4>
+									<h5>Maps for Millennials</h5>
 								</a>
-								<br>
-								<h5>Maps for Millennials</h5>
+							
 							</div>
 						</div>
-					</div>
-				</div>
+					<!-- </div> random row-->
 				<!--Search Container-->
 
-				<div id="search-container" class="col-md-6 rounded mx-auto">
+				<div id="search-container" class="col-md-5 rounded mx-auto">
 					<form class="col text-center">
 						<input class="searchInput form-control mr-sm-2" type="search" placeholder="GifMappy Search" aria-label="Search">
-						<button id="searchBtn" class="btn btn-info my-sm-2 col-sm-4" type="submit">Begin Search</button>
+						<button id="searchBtn" class="btn btn-info my-sm-2 col-sm-4" type="submit">Start Surfing</button>
 					</form>
 				</div>
 
@@ -57,16 +54,15 @@
 
 		<!--Carousel-->
 
-		
+	<div class="row justify-content-center">	
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 		<!--Carousel Page 1-->		
 				<div class="carousel-item active page-container">
-					<div class="row justify-content-center">
-						<div id="column1" class="col-md-4">
-							<div id="top-10-bar" class="d-inline-flex p-2 w-100">
-								<div id="gif-array" class="w-100 shadow-lg rounded">
-									<span class="biz-gif">
+					<div class="row"> <!--Inner Carousel-->
+						<div class="col-md-4 d-flex flex-column">
+								<div class="shadow-md rounded px-4 bgWhite">
+									<span class="biz-gif justify-content-center">
 										<iframe src="https://giphy.com/embed/TeeJEaWQtb9mg" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 									</span>
 									<h3>
@@ -74,361 +70,104 @@
 											<span class="biz-name">Business Name</span>
 										</u>
 									</h3>
-									<h4>
+									<h6>
 										<span class="biz-description">
 											<i class="fas fa-address-card"></i> Business Description</span>
-									</h4>
+									</h6>
 									<hr>
-									<div class="row">
-										<div class ="gcolumn px-1">
+									<div class="d-flex flex-row">
+										<div>
 											<div class="starcontainer">
 												<span class="googlestars">
 													<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 												</span>
 											</div>	
-											<h5><span class="googleReviewName">Google Reviewer Name</span></h5>
+											<h6><span class="googleReviewName">Google Reviewer Name</span></h6>
 											<p><span class="googleReviewDescription">Review Description</span></p>
 										</div>
-										<div class ="gcolumn px-1">
+										<div>
 											<div class="starcontainer">
 												<span class="googlestars">
 													<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 												</span>
 											</div>	
-											<h5><span class="googleReviewName">Google Reviewer Name</span></h5>
+											<h6><span class="googleReviewName">Google Reviewer Name</span></h6>
 											<p><span class="googleReviewDescription">Review Description</span></p>
 										</div>
 									</div>
-										<button type="button" class="btn btn-info btn-sm" id="moreGoogleReviews">. . .</button>
-										<br>
-										<small>See more Reviews From Google</small>
 									<hr>
-									<h5>
+									<h6>
 										<span class="biz-address">
 											<i class="fas fa-map-pin"></i> Address:</span>
-									</h5>
-									<h5>
+									</h6>
+									<h6>
 										<span class="biz-hours">
 											<i class="fas fa-clock"></i> Hours Open:</span>
-									</h5>
-									<h5>
+									</h6>
+									<h6>
 										<span class="biz-phone">
 											<i class="fas fa-phone"></i> Phone:</span>
-									</h5>
+									</h6>
 								</div>
-							</div>
 						</div>
 
-						<div id="column2" class="col-md-8">
-
-							<div id="map" class="align-self-stretch">
-								<div id="map-display" class="w-100 shadow-lg rounded">
+						<div class="col-md-8 d-flex flex-column">
+							<div id="map" class="align-self-stretch rounded">
+								<div id="map-display" class="shadow-md rounded">
 									<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
 									 allowfullscreen></iframe>
 								</div>
 							</div>
-
-							<div id="info-bar" class="align-self-center">
-								<div id="yelp-display" class="w-100 shadow-lg rounded">
-									<div class="row">
-										<div class="col-sm-10">
-											<div class="card-header rounded" id="yelpheader"></div>
-										</div>
-										<div class="col-sm-2">
-												<button type="button" class="btn btn-danger mx-1" id="moreGoogleReviews">More Reviews</button>
-										</div>
-									</div>	
-										<div class="row p-1">
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-														<div class="starcontainer">
-															<span class="yelpstars">
-																<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-															</span>
-														</div>	
-														<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-														<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>	
+									<div class="card">
+											<div class="card-header">
+													<i class="fab fa-yelp"> Yelp Reviews</i>
 											</div>
-								</div>
-							</div>
-
+											<div class="row card-body">
+													<div class ="col-sm-3">
+															<div class="starcontainer">
+																<span class="yelpstars">
+																	<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+																</span>
+															</div>	
+															<h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+															<p><span class="yelpReviewDescription">Review Description</span></p>
+														</div>
+														<div class ="col-sm-3">
+															<div class="starcontainer">
+																<span class="yelpstars">
+																	<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+																</span>
+															</div>	
+															<h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+															<p><span class="yelpReviewDescription">Review Description</span></p>
+														</div>
+														<div class ="col-sm-3">
+																<div class="starcontainer">
+																	<span class="yelpstars">
+																		<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+																	</span>
+																</div>	
+																<h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+																<p><span class="yelpReviewDescription">Review Description</span></p>
+															</div>
+															<div class ="col-sm-3">
+																	<div class="starcontainer">
+																		<span class="yelpstars">
+																			<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+																		</span>
+																	</div>	
+																	<h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+																	<p><span class="yelpReviewDescription">Review Description</span></p>
+															</div>
+											</div> <!--Card body-->
+										  </div>
 						</div>
 
-					</div>
+					</div> <!--Carousel Inner Row Div-->
 				</div>
 			
-			<!--Carousel page 2-->
+			<!--Carousel page 2 (just for slider purposes-->
 			<div class="carousel-item page-container">
-					<div class="row justify-content-center">
-						<div id="column1" class="col-md-4">
-							<div id="top-10-bar" class="d-inline-flex p-2 w-100">
-								<div id="gif-array" class="w-100 shadow-lg rounded">
-									<span class="biz-gif">
-										<iframe src="https://giphy.com/embed/TeeJEaWQtb9mg" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-									</span>
-									<h3>
-										<u>
-											<span class="biz-name">Business Name page 2</span>
-										</u>
-									</h3>
-									<h4>
-										<span class="biz-description">
-											<i class="fas fa-address-card"></i> Business Description</span>
-									</h4>
-									<hr>
-									<div class="row">
-										<div class ="gcolumn px-1">
-											<div class="starcontainer">
-												<span class="googlestars">
-													<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-												</span>
-											</div>	
-											<h5><span class="googleReviewName">Google Reviewer Name</span></h5>
-											<p><span class="googleReviewDescription">Review Description</span></p>
-										</div>
-										<div class ="gcolumn px-1">
-											<div class="starcontainer">
-												<span class="googlestars">
-													<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-												</span>
-											</div>	
-											<h5><span class="googleReviewName">Google Reviewer Name</span></h5>
-											<p><span class="googleReviewDescription">Review Description</span></p>
-										</div>
-									</div>
-										<button type="button" class="btn btn-info btn-sm" id="moreGoogleReviews">. . .</button>
-										<br>
-										<small>See more Reviews From Google</small>
-									<hr>
-									<h5>
-										<span class="biz-address">
-											<i class="fas fa-map-pin"></i> Address:</span>
-									</h5>
-									<h5>
-										<span class="biz-hours">
-											<i class="fas fa-clock"></i> Hours Open:</span>
-									</h5>
-									<h5>
-										<span class="biz-phone">
-											<i class="fas fa-phone"></i> Phone:</span>
-									</h5>
-								</div>
-							</div>
-						</div>
-
-						<div id="column2" class="col-md-8">
-
-							<div id="map" class="align-self-stretch">
-								<div id="map-display" class="w-100 shadow-lg rounded">
-									<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
-									 allowfullscreen></iframe>
-								</div>
-							</div>
-
-							<div id="info-bar" class="align-self-center">
-								<div id="yelp-display" class="w-100 shadow-lg rounded">
-									<div class="row">
-										<div class="col-sm-10">
-											<div class="card-header rounded" id="yelpheader"></div>
-										</div>
-										<div class="col-sm-2">
-												<button type="button" class="btn btn-danger mx-1" id="moreGoogleReviews">More Reviews</button>
-										</div>
-									</div>	
-										<div class="row p-1">
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-														<div class="starcontainer">
-															<span class="yelpstars">
-																<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-															</span>
-														</div>	
-														<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-														<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>	
-											</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			<!--Carousel Page 3-->
-			<div class="carousel-item page-container">
-					<div class="row justify-content-center">
-						<div id="column1" class="col-md-4">
-							<div id="top-10-bar" class="d-inline-flex p-2 w-100">
-								<div id="gif-array" class="w-100 shadow-lg rounded">
-									<span class="biz-gif">
-										<iframe src="https://giphy.com/embed/TeeJEaWQtb9mg" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-									</span>
-									<h3>
-										<u>
-											<span class="biz-name">Business Name page 3</span>
-										</u>
-									</h3>
-									<h4>
-										<span class="biz-description">
-											<i class="fas fa-address-card"></i> Business Description</span>
-									</h4>
-									<hr>
-									<div class="row">
-										<div class ="gcolumn px-1">
-											<div class="starcontainer">
-												<span class="googlestars">
-													<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-												</span>
-											</div>	
-											<h5><span class="googleReviewName">Google Reviewer Name</span></h5>
-											<p><span class="googleReviewDescription">Review Description</span></p>
-										</div>
-										<div class ="gcolumn px-1">
-											<div class="starcontainer">
-												<span class="googlestars">
-													<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-												</span>
-											</div>	
-											<h5><span class="googleReviewName">Google Reviewer Name</span></h5>
-											<p><span class="googleReviewDescription">Review Description</span></p>
-										</div>
-									</div>
-										<button type="button" class="btn btn-info btn-sm" id="moreGoogleReviews">. . .</button>
-										<br>
-										<small>See more Reviews From Google</small>
-									<hr>
-									<h5>
-										<span class="biz-address">
-											<i class="fas fa-map-pin"></i> Address:</span>
-									</h5>
-									<h5>
-										<span class="biz-hours">
-											<i class="fas fa-clock"></i> Hours Open:</span>
-									</h5>
-									<h5>
-										<span class="biz-phone">
-											<i class="fas fa-phone"></i> Phone:</span>
-									</h5>
-								</div>
-							</div>
-						</div>
-
-						<div id="column2" class="col-md-8">
-
-							<div id="map" class="align-self-stretch">
-								<div id="map-display" class="w-100 shadow-lg rounded">
-									<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=bronx%20pizza%2C%20111%20Washington%20Street%2C%20San%20Diego%2C%20CA%2C%2092123&key=AIzaSyAqx5_ZLRfWwMNRyxFNuvdvkSiD3tSvfxM"
-									 allowfullscreen></iframe>
-								</div>
-							</div>
-
-							<div id="info-bar" class="align-self-center">
-								<div id="yelp-display" class="w-100 shadow-lg rounded">
-									<div class="row">
-										<div class="col-sm-10">
-											<div class="card-header rounded" id="yelpheader"></div>
-										</div>
-										<div class="col-sm-2">
-												<button type="button" class="btn btn-danger mx-1" id="moreGoogleReviews">More Reviews</button>
-										</div>
-									</div>	
-										<div class="row p-1">
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-														<div class="starcontainer">
-															<span class="yelpstars">
-																<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-															</span>
-														</div>	
-														<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-														<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>
-												<div class ="sol-sm-4 p-1">
-													<div class="starcontainer">
-														<span class="yelpstars">
-															<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-														</span>
-													</div>	
-													<h5><span class="yelpReviewName">yelp Reviewer Name</span></h5>
-													<p><span class="yelpReviewDescription">Review Description</span></p>
-												</div>	
-											</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
 				</div>
 			<!--Carousel Slider buttons-->
 			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -440,7 +179,9 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-	</div><!-- .container -->
+	</div><!-- .carousel -->
+	</div><!--.carousel row-->
+</div><!--bgBackground-->	
 	<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4 border-top border-secondary">
 
