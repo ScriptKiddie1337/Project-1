@@ -12,7 +12,7 @@
 }
 
 .page-container {
-    padding: 20px 10px;
+    padding: 20px 45px;
 }
 
 #search-container {
@@ -64,14 +64,12 @@ footer {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 95%;
-  width: 100px;
+  height: 55%;
+  width: 25px;
   outline: black;
   background-size: 100%, 100%;
   border-radius: 5%;
-   background-color: rgb(221, 173, 82);
-   
-
+  background-color: rgb(221, 173, 82);
 }
 
 .carousel-control-next-icon:after
@@ -83,6 +81,16 @@ footer {
 .carousel-control-prev-icon:after {
   font-size: 55px;
   color: rgb(221, 173, 82);
+}
+
+.carousel-control-prev {
+    justify-content: right;
+}
+
+
+.carousel-control-next {
+   
+    justify-content: flex-end;
 }
 
 
