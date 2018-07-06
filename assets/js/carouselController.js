@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 function addCarsouselItems(placeIds) {
+=======
+function addCarsouselItems(placeIds, details, gifs) {
+>>>>>>> master
 
     $(".carousel-inner").empty()
 
@@ -10,10 +14,73 @@ function addCarsouselItems(placeIds) {
 
         if (index == 0) {
             active = "active"
+<<<<<<< HEAD
+=======
+        } else {
+            page = "page " + (index + 1)
+        }
+
+        let userReview1 = ""
+        let userReview2 = ""
+
+        if (details[index].reviews[0]) {
+            userReview1 = `<div class="gcolumn px-1">
+            <div class="starcontainer">
+                <span class="googlestars inactive">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="googlestars active" style="width: ${details[index].reviews[0].rating * 20}%">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+            </div>
+            <h5>
+                <span class="googleReviewName">${details[index].reviews[0].author_name}</span>
+            </h5>
+            <p>
+                <span class="googleReviewDescription">${details[index].reviews[0].text}</span>
+            </p>
+        </div>`
+        }
+
+        if (details[index].reviews[1]) {
+            userReview2 = `<div class="gcolumn px-1">
+            <div class="starcontainer">
+                <span class="googlestars inactive">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+                <span class="googlestars active" style="width: ${details[index].reviews[1].rating * 20}%">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+            </div>
+            <h5>
+                <span class="googleReviewName">${details[index].reviews[1].author_name}</span>
+            </h5>
+            <p>
+                <span class="googleReviewDescription">${details[index].reviews[1].text}</span>
+            </p>
+        </div>`
+>>>>>>> master
         }
 
         $(".carousel-inner").append(`
             <div class="carousel-item ${active} page-container">
+<<<<<<< HEAD
                 <div class="row justify-content-center">
                     <div id="column1" class="col-md-4">
                         <div id="top-10-bar" class="d-inline-flex p-2 w-100">
@@ -32,6 +99,44 @@ function addCarsouselItems(placeIds) {
                             </div>
                         </div>
                     </div>
+=======
+					<div class="row justify-content-center">
+						<div id="column1" class="col-md-4">
+							<div id="top-10-bar" class="d-inline-flex p-2 w-100">
+								<div id="gif-array" class="w-100 shadow-lg rounded">
+									<span class="biz-gif">
+										<iframe src="${gifs[index]}" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+									</span>
+									<h3>
+										<u>
+											<span class="biz-name">${details[index].name} ${page}</span>
+										</u>
+									</h3>
+									<hr>
+									<div class="row">
+                                        ${userReview1}
+                                        ${userReview2}
+									</div>
+									<button type="button" class="btn btn-info btn-sm" id="moreGoogleReviews">. . .</button>
+									<br>
+									<small>See more Reviews From Google</small>
+									<hr>
+									<h5>
+										<span class="biz-address">
+											<i class="fas fa-map-pin"></i> Address: ${details[index].formatted_address}</span>
+									</h5>
+									<h5>
+										<span class="biz-hours">
+											<i class="fas fa-clock"></i> Hours Open:</span>
+									</h5>
+									<h5>
+										<span class="biz-phone">
+											<i class="fas fa-phone"></i> Phone: ${details[index].formatted_phone_number}</span>
+									</h5>
+								</div>
+							</div>
+						</div>
+>>>>>>> master
 
                     <div id="column2" class="col-md-8">
 
