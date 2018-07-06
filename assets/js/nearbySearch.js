@@ -20,6 +20,9 @@ function searchNearby(location, term, gifs) {
             }
         })
 
+<<<<<<< HEAD
+        addCarsouselItems(placesIds)
+=======
         let detailedResults = []
 
         placesIds.forEach(function (placedId, index) {
@@ -38,6 +41,7 @@ function searchNearby(location, term, gifs) {
                 }
             })
         })
+>>>>>>> master
     })
 
 
