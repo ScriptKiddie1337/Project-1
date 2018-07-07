@@ -110,49 +110,7 @@ function addCarsouselItems(placeIds, details, gifs) {
                         ${embeddedMap}
                     </div>
                 </div>
-                        <div class="card">
-                                <div class="card-header">
-                                        <i class="fab fa-yelp"> Yelp Reviews</i>
-                                </div>
-                                <div class="row card-body">
-                                        <div class ="col-sm-3">
-                                                <div class="starcontainer">
-                                                    <span class="yelpstars">
-                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                    </span>
-                                                </div>	
-                                                <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
-                                                <p><span class="yelpReviewDescription">Review Description</span></p>
-                                            </div>
-                                            <div class ="col-sm-3">
-                                                <div class="starcontainer">
-                                                    <span class="yelpstars">
-                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                    </span>
-                                                </div>	
-                                                <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
-                                                <p><span class="yelpReviewDescription">Review Description</span></p>
-                                            </div>
-                                            <div class ="col-sm-3">
-                                                    <div class="starcontainer">
-                                                        <span class="yelpstars">
-                                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                        </span>
-                                                    </div>	
-                                                    <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
-                                                    <p><span class="yelpReviewDescription">Review Description</span></p>
-                                                </div>
-                                                <div class ="col-sm-3">
-                                                        <div class="starcontainer">
-                                                            <span class="yelpstars">
-                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            </span>
-                                                        </div>	
-                                                        <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
-                                                        <p><span class="yelpReviewDescription">Review Description</span></p>
-                                                </div>
-                                </div> <!--Card body-->
-                              </div>
+                        
             </div>
 
         </div> <!--Carousel Inner Row Div-->
