@@ -72,75 +72,98 @@ function addCarsouselItems(placeIds, details, gifs) {
         </div>`
         }
 
-        $(".carousel-inner").append(`
-            <div class="carousel-item ${active} page-container">
-					<div class="row justify-content-center">
-						<div id="column1" class="col-md-4">
-							<div id="top-10-bar" class="d-inline-flex p-2 w-100">
-								<div id="gif-array" class="w-100 shadow-lg rounded">
-									<span class="biz-gif">
-										<iframe src="${gifs[index]}" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-									</span>
-									<h3>
-										<u>
-											<span class="biz-name">${details[index].name} ${page}</span>
-										</u>
-									</h3>
-									<hr>
-									<div class="row">
-                                        ${userReview1}
-                                        ${userReview2}
-									</div>
-									<button type="button" class="btn btn-info btn-sm" id="moreGoogleReviews">. . .</button>
-									<br>
-									<small>See more Reviews From Google</small>
-									<hr>
-									<h5>
-										<span class="biz-address">
-											<i class="fas fa-map-pin"></i> Address: ${details[index].formatted_address}</span>
-									</h5>
-									<h5>
-										<span class="biz-hours">
-											<i class="fas fa-clock"></i> Hours Open:</span>
-									</h5>
-									<h5>
-										<span class="biz-phone">
-											<i class="fas fa-phone"></i> Phone: ${details[index].formatted_phone_number}</span>
-									</h5>
-								</div>
-							</div>
-						</div>
-
-                    <div id="column2" class="col-md-8">
-
-                        <div id="map" class="align-self-stretch">
-                            <div id="map-display" class="w-100 shadow-lg rounded">
-                                ${embeddedMap}
-                            </div>
+        $(".carousel-inner").append(
+            `<div class="carousel-item ${active} page-container">
+        <div class="row"> <!--Inner Carousel-->
+            <div class="col-md-4 d-flex flex-column">
+                    <div class="shadow-md rounded px-4 bgWhite">
+                        <span class="biz-gif justify-content-center">
+                            <iframe src="${gifs[index]}" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </span>
+                        <h3>
+                            <u>
+                                <span class="biz-name">${details[index].name} ${page}</span>
+                            </u>
+                        </h3>
+                        <hr>
+                        <div class="d-flex flex-row">
+                        ${userReview1}
+                        ${userReview2}
                         </div>
-
-                        <div id="info-bar" class="align-self-center">
-                            <div id="yelp-display" class="w-100 shadow-lg rounded">
-                                <br>
-                                <br>
-                                <br>
-                                <h4>Phase 3: Yelp Infobar | div id for javascript targeting: #yelp-display</h4>
-                            </div>
-                        </div>
-
+                        <hr>
+                        <h6>
+                            <span class="biz-address">
+                                <i class="fas fa-map-pin"></i> Address: ${details[index].formatted_address}</span>
+                        </h6>
+                        <h6>
+                            <span class="biz-phone">
+                                <i class="fas fa-phone"></i> Phone: ${details[index].formatted_phone_number}</span>
+                        </h6>
                     </div>
-
-                </div>
             </div>
-        `)
+
+            <div class="col-md-8 d-flex flex-column">
+                <div id="map" class="align-self-stretch rounded">
+                    <div id="map-display" class="shadow-md rounded">
+                        ${embeddedMap}
+                    </div>
+                </div>
+                        <div class="card">
+                                <div class="card-header">
+                                        <i class="fab fa-yelp"> Yelp Reviews</i>
+                                </div>
+                                <div class="row card-body">
+                                        <div class ="col-sm-3">
+                                                <div class="starcontainer">
+                                                    <span class="yelpstars">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>	
+                                                <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                                <p><span class="yelpReviewDescription">Review Description</span></p>
+                                            </div>
+                                            <div class ="col-sm-3">
+                                                <div class="starcontainer">
+                                                    <span class="yelpstars">
+                                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>	
+                                                <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                                <p><span class="yelpReviewDescription">Review Description</span></p>
+                                            </div>
+                                            <div class ="col-sm-3">
+                                                    <div class="starcontainer">
+                                                        <span class="yelpstars">
+                                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                        </span>
+                                                    </div>	
+                                                    <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                                    <p><span class="yelpReviewDescription">Review Description</span></p>
+                                                </div>
+                                                <div class ="col-sm-3">
+                                                        <div class="starcontainer">
+                                                            <span class="yelpstars">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                            </span>
+                                                        </div>	
+                                                        <h6><span class="yelpReviewName">yelp Reviewer Name</span></h6>
+                                                        <p><span class="yelpReviewDescription">Review Description</span></p>
+                                                </div>
+                                </div> <!--Card body-->
+                              </div>
+            </div>
+
+        </div> <!--Carousel Inner Row Div-->
+    </div>`)
     })
 
-    $("carousel-inner").append(`<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-</a>
-<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-</a>`)
+    $(".carousel-inner").append(`<!--Carousel Slider buttons-->
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>`)
 }
