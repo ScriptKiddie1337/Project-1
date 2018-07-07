@@ -7,12 +7,11 @@ function addCarsouselItems(placeIds, details, gifs) {
     embeddedMaps.forEach(function (embeddedMap, index) {
 
         let active = ""
-        let page = ""
+        let page = (index + 1)
+        let pages = placeIds.length
 
         if (index == 0) {
             active = "active"
-        } else {
-            page = "page " + (index + 1)
         }
 
         let userReview1 = ""
@@ -82,9 +81,12 @@ function addCarsouselItems(placeIds, details, gifs) {
                         </span>
                         <h3>
                             <u>
-                                <span class="biz-name">${details[index].name} ${page}</span>
+                                <span class="biz-name">${details[index].name}</span>
                             </u>
                         </h3>
+                        <h6>
+                            result ${page} of ${pages}
+                        </h6>
                         <hr>
                         <div class="d-flex flex-row">
                         ${userReview1}
@@ -166,4 +168,6 @@ function addCarsouselItems(placeIds, details, gifs) {
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>`)
+
+    $(".loading-indicator").css("visibility", "hidden")
 }

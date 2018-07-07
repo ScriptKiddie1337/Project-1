@@ -116,7 +116,16 @@ i {
     color: white;
 }
 
-
+.loading-indicator {
+    position: absolute; 
+    z-index: 9001;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 145px;
+    visibility: hidden;
+}
 
 
 

@@ -13,6 +13,8 @@ $(document).ready(function () {
 
         event.preventDefault();
 
+        $(".loading-indicator").css("visibility", "visible")
+
         //load search gif
         searchQuery = $(".searchInput").val().trim()
 
